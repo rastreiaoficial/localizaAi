@@ -1,0 +1,12 @@
+{
+  "name": "LocalizaAI — Horários de transporte",
+  "short_name": "LocalizaAI",
+  "description": "Consulte horários de vans e ônibus da sua região.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f7f6",
+  "theme_color": "#0d5e56",
+  "icons": [{"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

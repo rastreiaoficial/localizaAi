@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0d5e56"><meta name="description" content="Consulte horários de vans e ônibus, com origem, destino e identificação do transporte.">
+  <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+  <title>LocalizaAI — Horários de transporte</title>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./" aria-label="LocalizaAI início"><span class="brand-mark">L</span><span><b>Localiza<span>AI</span></b><small>Horários de transporte</small></span></a><button id="themeToggle" class="icon-btn" aria-label="Alternar tema">◐</button></header>
+  <main class="container">
+    <section class="intro"><span class="eyebrow">INFORMAÇÃO LOCAL, SEM COMPLICAÇÃO</span><h1>Seu próximo horário começa aqui.</h1><p>Consulte saídas de vans e ônibus por origem e destino.</p></section>
+    <section class="search-panel" aria-label="Pesquisar horários">
+      <label>Origem<select id="originFilter"><option value="">Todas as origens</option></select></label>
+      <label>Destino<select id="destinationFilter"><option value="">Todos os destinos</option></select></label>
+      <label>Transporte<select id="typeFilter"><option value="">Van e ônibus</option><option value="van">Van</option><option value="bus">Ônibus</option></select></label>
+      <button id="clearFilters" class="button button-secondary">Limpar filtros</button>
+    </section>
+    <div class="section-heading"><div><h2>Horários disponíveis</h2><p id="resultSummary">Carregando horários…</p></div><span class="live-dot">Informação pública</span></div>
+    <div id="scheduleList" class="schedule-list" aria-live="polite"><div class="empty-state">Carregando horários…</div></div>
+    <p id="updatedAt" class="updated-note"></p>
+    <section class="ad-slot"><span>PUBLICIDADE</span><b>Seu comércio pode aparecer aqui</b><p>Espaço reservado para anúncios locais e publicidade automatizada.</p></section>
+    <section class="notice"><span class="notice-icon">i</span><p>Os horários podem sofrer alterações. Confirme com a empresa ou motorista antes de viajar, especialmente em feriados.</p></section>
+  </main>
+  <footer><b>LocalizaAI</b><span>Horários de transporte da região</span><a href="mailto:contato@localizaai.com.br">Contato</a></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="app.js"></script>
+</body></html>
